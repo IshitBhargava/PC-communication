@@ -41,7 +41,8 @@ JUMPER TWO ON THE OHER SIDE: Potentiometer Wiper
 Note: For better perfomance, connect terminal 2 of potentiometer to Arduino GND
 
 **Ultrasonic Sensor:**
-Trig: 
-Echo:
+Trig: Written in Code 
+Echo: Written in Code
 VCC: 5v 
 GND: GND
+
