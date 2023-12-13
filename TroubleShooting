@@ -1,0 +1,7 @@
+TroubleShooting:
+
+Step 1: Verify Everything (Connections, Code uploading,etc)
+
+Step 2: Try changing I2C address in the code
+
+Step 3: Try the following codes to check if your components work:
