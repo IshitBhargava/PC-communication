@@ -5,3 +5,35 @@ Step 1: Verify Everything (Connections, Code uploading,etc)
 Step 2: Try changing I2C address in the code
 
 Step 3: Try the following codes to check if your components work:
+
+LCD:
+           
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+
+int rows = 20;
+int columns = 4;
+
+// Set the LCD address to 0x27 
+LiquidCrystal_I2C lcd(0x27, rows, columns);
+
+void setup() {
+  // initialize with the number of columns and rows:
+  lcd.begin(16, 2);
+  // Print a message to the LCD.
+  lcd.print("LCD Test");
+}
+
+void loop() {
+  // Display a scrolling message
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("Hello, World!");
+  delay(1000);
+  lcd.clear();
+  lcd.setCursor(0, 1);
+  lcd.print("LCD Test");
+  delay(1000);
+}
+
+
